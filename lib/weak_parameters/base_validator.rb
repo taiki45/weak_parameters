@@ -65,7 +65,7 @@ module WeakParameters
     # key array to validation target
     def path
       # Because @key becomes nil at ListValidator, I remove it from path.
-      (@path + [ @key ]).compact
+      ([@path].flatten + [ @key ]).compact
     end
 
     def params
